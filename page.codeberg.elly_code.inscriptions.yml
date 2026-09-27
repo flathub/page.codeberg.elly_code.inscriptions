@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://codeberg.org/elly-code/inscriptions.git
-        tag: 1.2.0-2
-        commit: 34c726715339f5133096fc686b8542bf573860c1
+        tag: 1.2.0
+        commit: 8919b6969fa95a05c52722e63880906c658e9ed2
         x-checker-data:
           type: git
-          tag-pattern: '^([\d.]+)$'
+          tag-pattern: ^([\d.]+)$
