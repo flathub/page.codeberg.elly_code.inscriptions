@@ -38,4 +38,4 @@ modules:
         commit: 34c726715339f5133096fc686b8542bf573860c1
         x-checker-data:
           type: git
-          tag-pattern: '^([\d.]+)$'
+          tag-pattern: '^\d+.\d+.\d+($|-\d+$)'
