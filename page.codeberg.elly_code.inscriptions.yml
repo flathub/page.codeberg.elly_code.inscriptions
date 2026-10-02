@@ -30,12 +30,15 @@ modules:
   - name: inscriptions
     buildsystem: meson
     config-opts:
-      - --buildtype=release
+      # Flathub strips debug symbols into a separate extension
+      - --buildtype=debugoptimized
     sources:
       - type: git
         url: https://codeberg.org/elly-code/inscriptions.git
-        tag: 1.2.0-2
-        commit: 34c726715339f5133096fc686b8542bf573860c1
+        tag: 1.2.1
+        commit: 6f5016cfb5f304df13bc5318111525da407179ba
+        # Flathub's auto update bot
         x-checker-data:
           type: git
-          tag-pattern: '^\d+.\d+.\d+($|-\d+$)'
+          tag-pattern: '^\d+.\d+.\d+$'
+          sort-tags: false
